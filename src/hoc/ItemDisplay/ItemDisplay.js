@@ -1,0 +1,1 @@
+// A reusable item display component. Accepts name and a number as input and displays them both.
