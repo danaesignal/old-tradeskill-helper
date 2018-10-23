@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import classes from './index.scss';
 import Layout from './hoc/Layout/Layout'
+import classes from './App.scss'
 
 class App extends Component {
   render(){
     return (
-      <div className={classes.Div}>
+      <div className={classes.app}>
         <Layout />
       </div>
     );

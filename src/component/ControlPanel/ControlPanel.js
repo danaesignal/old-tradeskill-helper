@@ -8,7 +8,7 @@ class ControlPanel extends PureComponent{
   render(){
     return (
       <div>
-        ControlPanel
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
       </div>
     );
   }
