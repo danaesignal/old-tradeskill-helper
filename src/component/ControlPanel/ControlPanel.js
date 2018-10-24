@@ -3,12 +3,22 @@
 // Eventually you can swap servers and pull market data to populate the controls.
 
 import React, { PureComponent } from 'react';
+import classes from './ControlPanel.scss';
 
 class ControlPanel extends PureComponent{
   render(){
     return (
       <div>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+        <ul className={classes.ControlPanel}>
+          <li><div>Test</div><input type="text" style={{'width': '50px'}}></input></li>
+          <li>Mock</li>
+          <li>Mock</li>
+          <li>Mock</li>
+          <li>Mock</li>
+          <li>Mock</li>
+          <li>Mock</li>
+          <li>Mock</li>
+        </ul>
       </div>
     );
   }
