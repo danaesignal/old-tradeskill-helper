@@ -1,23 +1,42 @@
 .ControlPanel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-
-  li {
-    width: calc(25% - 4px);
-    height: 1.62rem;
-    text-align: center;
+  ul {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    box-shadow: 0px 2px 6px lighten(gray,40%);
-    margin: 2px;
-    padding-left: 5px;
+    margin: 0;
+    padding: 0;
 
-    input {
-      border: none;
+    li {
+      width: calc(100% - 4px);
+      height: 1.62rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px lighten(gray,40%);
+      margin: 2px;
+      padding-left: 5px;
+
+      // Media queries to adjust card size based on screen size
+      @media (min-width: 450px) {
+        width: calc(50% - 4px);
+      }
+
+      @media (min-width: 830px) {
+        width: calc(33% - 4px);
+      }
+
+      @media (min-width: 1100px) {
+        width: calc(25% - 4px);
+      }
+
+      input {
+        border: none;
+      }
     }
   }
+
+  padding: 3px 0;
+  border-bottom: 3px solid lighten(gray,25%);
+  border-top: 3px solid lighten(gray,25%);
 }

@@ -3,21 +3,23 @@
 // Eventually you can swap servers and pull market data to populate the controls.
 
 import React, { PureComponent } from 'react';
+import ControlPanelCard from './ControlPanelCard/ControlPanelCard';
 import classes from './ControlPanel.scss';
 
 class ControlPanel extends PureComponent{
   render(){
     return (
-      <div>
-        <ul className={classes.ControlPanel}>
-          <li><div>Test</div><input type="text" style={{'width': '50px'}}></input></li>
-          <li>Mock</li>
-          <li>Mock</li>
-          <li>Mock</li>
-          <li>Mock</li>
-          <li>Mock</li>
-          <li>Mock</li>
-          <li>Mock</li>
+      <div className={classes.ControlPanel}>
+        <ul>
+          {/* These names eventually be pulled from state along w/ prices */}
+          <ControlPanelCard name="Common Herb"/>
+          <ControlPanelCard name="Crimson Pigment"/>
+          <ControlPanelCard name="Ultramarine Pigment"/>
+          <ControlPanelCard name="Viridescent Pigment"/>
+          <ControlPanelCard name="Quiet Mind Tome"/>
+          <ControlPanelCard name="Crimson Ink"/>
+          <ControlPanelCard name="Ultramarine Ink"/>
+          <ControlPanelCard name="Viridescent Ink"/>
         </ul>
       </div>
     );
