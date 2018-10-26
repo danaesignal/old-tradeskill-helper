@@ -8,9 +8,9 @@ class ItemDisplay extends PureComponent{
         <div>{this.props.name}</div>
         <input
           type="text"
-          defaultValue={this.props.price.toFixed(2)}
-          onBlur={this.props.updateHandler}
-          data-item={this.props.item}
+          defaultValue={this.props.price}
+          onBlur={this.props.onBlur}
+          data-item={this.props.dataItem}
           style={{'color': this.props.color}}>
         </input>
       </li>
