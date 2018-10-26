@@ -1,0 +1,57 @@
+.DisplayPanelCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3px;
+  padding: 0;
+  border: 3px solid lighten(gray,25%);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px lighten(gray,40%);
+  width: calc(100% - 4px);
+  max-width: 450px;
+
+  @media (min-width: 600px) {
+    // width: calc(50% - 4px);
+    width: calc(100% - 4px);
+    max-width: 450px;
+  }
+  @media (min-width: 800px) {
+    // width: calc(33% - 4px);
+    max-width: calc(50% - 4px);
+  }
+  @media (min-width: 830px) {
+    // width: calc(33% - 4px);
+    width: 315px
+  }
+
+  @media (min-width: 1100px) {
+    width: calc(33% - 4px);
+  }
+
+  p {
+    padding: 0.25rem 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 3px solid lighten(gray,25%);
+  }
+
+  li {
+    margin: 2px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    // Media queries to adjust card size based on screen size
+    div {
+      // display: flex;
+    }
+
+    input {
+      border: none;
+      width: 100px;
+      text-align: right;
+      padding-right: 5px;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}
