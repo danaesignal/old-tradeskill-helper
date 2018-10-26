@@ -5,7 +5,12 @@ class ControlPanelCard extends PureComponent{
     return (
       <li>
         <div>{this.props.name}</div>
-        <input type="text" style={{'width': '50px'}}></input>
+        <input
+          type="text"
+          defaultValue={this.props.price.toFixed(2)}
+          onBlur={this.props.updateHandler}
+          data-item={this.props.item}>
+        </input>
       </li>
     );
   }
