@@ -28,7 +28,6 @@ class Layout extends Component{
 
   componentWillMount(){
     let savedState = JSON.parse(localStorage.getItem('commodities'));
-    console.log(this.state.millingRatios);
     if(savedState !== null){
       this.setState({commodities: savedState});
     }

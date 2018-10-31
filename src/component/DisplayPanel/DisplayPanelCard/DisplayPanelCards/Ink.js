@@ -12,7 +12,6 @@ class Ink extends PureComponent{
     let revenue = (herb.yield * -1) + (blueInk.yield + redInk.yield + greenPigment.yield);
     let inTheGreen = revenue > 0 ? "green" : "red";
 
-    console.log(blueInk, redInk);
     return (
       <React.Fragment>
         <p>Common Inks</p>
