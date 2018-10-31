@@ -1,3 +1,9 @@
+.divider {
+  display: block;
+  border-bottom: 3px solid lighten(gray,25%);
+  margin-bottom: -1px;
+}
+
 .DisplayPanelCard {
   display: flex;
   flex-direction: column;

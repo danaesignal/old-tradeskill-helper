@@ -1,1 +1,0 @@
-// This is a wrapper that calculates the cost of an item and then passes that value to <ItemDisplay />

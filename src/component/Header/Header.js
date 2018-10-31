@@ -6,7 +6,7 @@ class Header extends PureComponent{
   render(){
     return (
       <div>
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1>Automated Goblin Capitalist</h1>
       </div>
     );
   }

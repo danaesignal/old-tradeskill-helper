@@ -23,16 +23,7 @@ class ControlPanel extends PureComponent{
     return (
       <div className={classes.ControlPanel}>
         <ul>
-          {/* These names eventually be pulled from state along w/ prices */}
-            {/* <ControlPanelCard name="Common Herb"/>
-            <ControlPanelCard name="Crimson Pigment"/>
-            <ControlPanelCard name="Ultramarine Pigment"/>
-            <ControlPanelCard name="Viridescent Pigment"/>
-            <ControlPanelCard name="Quiet Mind Tome"/>
-            <ControlPanelCard name="Crimson Ink"/>
-            <ControlPanelCard name="Ultramarine Ink"/>
-            <ControlPanelCard name="Viridescent Ink"/> */}
-            {cards}
+          {cards}
         </ul>
       </div>
     );
